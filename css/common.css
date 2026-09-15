@@ -1,0 +1,70 @@
+* ,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img, video{
+    max-width: 100%;
+    /* width: 100%; */
+    vertical-align: middle;
+}
+address,i,em{
+    font-style: normal;
+}
+button{
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+/* gpt */
+button,
+input,
+textarea,
+select{
+    font: inherit;
+    color: inherit;
+}
+/* input */
+/* input{
+    cursor: pointer;
+    background: none;
+    border: 0;
+} */
+/* blind 화면에서 보이지는 않지만 리더기를 통해 읽혀지도록 함 */
+.blind{
+    position: absolute;
+    top: -9999px;
+}
+/* iframe  */
+iframe{
+    border: 0;
+}
+/* skip */
+.skip-nav{
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+.skip-nav a{
+    display: block;
+    padding: 14px 20px;
+}
+.skip-nav:focus-within{
+    top: 0;
+}
+/* focus : 자신한테 포커스가 들어간 것
+focus-within : 자신 뿐 아니라 후손한테도 포커스가 들어감 */
