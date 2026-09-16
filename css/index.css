@@ -23,14 +23,107 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 80px;
   padding: 0 40px;
   background-color: #fff;
   z-index: 10;
+}
+
+header .logo a {
+  width: 80px;
+  display: flex;
+  align-items: center;
 }
 
 /* menu */
 .main-menu {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  align-items: center;
+  gap: 50px;
+}
+.main-menu > li {
+  position: relative;
+}
+.main-menu > li > a {
+  font-size: 16px;
+  font-weight: 500;
+}
+.menu-icon {
+  position: absolute;
+  top: 0;
+  right: -32%;
+}
+
+/* sub-menu */
+.sub-menu {
+  position: absolute;
+  top: 80px;
+  width: max-content;
+  padding: 20px 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+.sub-menu li {
+  padding: 8px 0;
+  white-space: nowrap;
+}
+.sub-menu a:hover {
+  text-decoration: underline;
+}
+.sub-menu-second {
+  display: flex;
+}
+.sub-menu-second li:first-child {
+  margin-right: 20px;
+}
+.sub-menu-second span {
+  color: #888;
+}
+
+/* gnb icon */
+.gnb-icon-list {
+  display: flex;
+  gap: 20px;
+}
+.gnb-icon-list img {
+  width: 24px;
+  height: 24px;
+}
+
+/* 메인 비디오 헤더 */
+.main-header-video-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: clip;
+}
+.header-slide video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* 메인 배너 슬라이드 섹션 */
+.main-banner-slide-wrap {
+  padding: 100px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.main-banner-slide-wrap > h2 {
+  text-indent: -9999px;
+}
+.main-banner-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.main-banner-list {
+  display: flex;
+  overflow: hidden;
+  width: 300%;
+}
+.main-banner-list li {
+  min-width: 450px;
+  flex: 1;
 }

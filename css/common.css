@@ -1,37 +1,44 @@
-* ,
+*,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-li{
-    list-style: none;
+body {
+  font-size: 16px;
+  font-weight: 400;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+li {
+  list-style: none;
 }
-img, video{
-    max-width: 100%;
-    /* width: 100%; */
-    vertical-align: middle;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-address,i,em{
-    font-style: normal;
+img,
+video {
+  max-width: 100%;
+  /* width: 100%; */
+  vertical-align: middle;
 }
-button{
-    cursor: pointer;
-    background: none;
-    border: 0;
+address,
+i,
+em {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
 }
 /* gpt */
 button,
 input,
 textarea,
-select{
-    font: inherit;
-    color: inherit;
+select {
+  font: inherit;
+  color: inherit;
 }
 /* input */
 /* input{
@@ -40,31 +47,31 @@ select{
     border: 0;
 } */
 /* blind 화면에서 보이지는 않지만 리더기를 통해 읽혀지도록 함 */
-.blind{
-    position: absolute;
-    top: -9999px;
+.blind {
+  position: absolute;
+  top: -9999px;
 }
 /* iframe  */
-iframe{
-    border: 0;
+iframe {
+  border: 0;
 }
 /* skip */
-.skip-nav{
-    position: fixed;
-    top: -100px;
-    left: 0;
-    z-index: 99999;
-    width: 100%;
-    background: #111;
-    color: #fff;
-    text-align: center;
+.skip-nav {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  text-align: center;
 }
-.skip-nav a{
-    display: block;
-    padding: 14px 20px;
+.skip-nav a {
+  display: block;
+  padding: 14px 20px;
 }
-.skip-nav:focus-within{
-    top: 0;
+.skip-nav:focus-within {
+  top: 0;
 }
 /* focus : 자신한테 포커스가 들어간 것
 focus-within : 자신 뿐 아니라 후손한테도 포커스가 들어감 */
