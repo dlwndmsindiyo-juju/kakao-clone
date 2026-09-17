@@ -469,9 +469,7 @@ header .logo a {
   word-break: keep-all;
 }
 
-/* =================================
-   푸터 전체 영역 스타일
-   ================================= */
+/*  푸터 전체 영역 스타일 */
 footer {
   width: 100%;
   border-top: 1px solid #eee;
@@ -739,7 +737,6 @@ footer {
     display: none !important;
   }
 
-  /* 다크모드 아이콘 숨기기 (필요시 노출 가능) */
   .gnb-icon-list li:nth-child(2),
   .gnb-icon-list li:nth-child(3) {
 
@@ -769,7 +766,6 @@ footer {
     display: block;
   }
 
-  /* 2. 모바일 슬라이드 메뉴 드로어 (오프캔버스) 배경 어두운 레이어 */
   .mobile-menu-overlay {
     display: none;
     position: fixed;
@@ -785,7 +781,6 @@ footer {
     display: block;
   }
 
-  /* 3. 오른쪽에서 슬라이드 되어 나오는 메뉴 박스 본체 */
   .mobile-menu-drawer {
     position: fixed;
     top: 0;
@@ -840,7 +835,6 @@ footer {
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
-    /* 더하기 아이콘을 X자로 회전 느낌 부여 혹은 닫기 아이콘 */
   }
 
   /* 드로어 내부 스크롤 영역 */
