@@ -41,3 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/// 메인배너 섹션 애니메이션
