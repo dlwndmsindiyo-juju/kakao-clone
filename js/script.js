@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 헤더 메뉴 드롭다운
   const header = document.querySelector("header");
   const subBg = document.querySelector(".sub-bg");
-  const mainMenus = document.querySelectorAll(".main-menu>.gnb-menu");
+  const mainMenus = document.querySelectorAll(".main-menu .gnb-menu");
   const subMenu = document.querySelectorAll(".sub-menu");
 
   mainMenus.forEach((menu) => {
@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  header.addEventListener("mouseleave", () => {
+    gsap.to(subBg, {
+      height: 0,
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  });
 });
-
-
